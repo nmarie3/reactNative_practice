@@ -7,23 +7,23 @@ import {View, Text, StyleSheet, FlatList} from "react-native";
 
 const ListScreen = () => {
     const friends = [
-        {name: 'Friend #1'}, //key must be a string not a number if you insert keys in item manually ex;  key: '1'. otherwise do below keyExtractor
-        {name: 'Friend #2'},
-        {name: 'Friend #3'},
-        {name: 'Friend #4'},
-        {name: 'Friend #5'},
-        {name: 'Friend #6'},
-        {name: 'Friend #7'},
+        {name: 'Friend #1', age: 28}, //key must be a string not a number if you insert keys in item manually ex;  key: '1'. otherwise do below keyExtractor
+        {name: 'Friend #2', age: 30},
+        {name: 'Friend #3', age: 65},
+        {name: 'Friend #4', age: 22},
+        {name: 'Friend #5', age: 32},
+        {name: 'Friend #6', age: 41},
+        {name: 'Friend #7', age: 30},
     ];
     return (
         <FlatList 
-            horizontal //tells list we want it to scroll horizontally instead of vertical
+            horizontal //tells list we want it to scroll horizontally instead of vertical, don't need to specify anything for vertical scrolling
             showsHorizontalScrollIndicator={false} //hides the scroll bar at bottom of screen
             keyExtractor={(friend) => friend.name } //name property becomes key
             data={friends} //need data and renderItem props
             renderItem={({item}) => {  //renderItem is function called with every element of array
                 //item === {name: 'Friend #1'}
-                return <Text style={styles.textStyle}>{item.name}</Text>;
+                return <Text style={styles.textStyle}>{item.name} - Age {item.age} </Text>;
             }}
         />
     );
