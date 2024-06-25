@@ -24,6 +24,22 @@ import { Text, StyleSheet, View, Button, TouchableOpacity} from "react-native";
       onPress={() => navigation.navigate('Image')}
       title="Go to image demo"
     /> 
+    <Button 
+      onPress={() => navigation.navigate('Counter')}
+      title="Go to counter demo"
+    /> 
+    <Button 
+      onPress={() => navigation.navigate('Color')}
+      title="Go to color demo"
+    /> 
+    <Button 
+      onPress={() => navigation.navigate('Square')}
+      title="Go to square demo"
+    /> 
+    <Button 
+      onPress={() => navigation.navigate('Text')}
+      title="Go to text demo"
+    />
     <TouchableOpacity //onPress={() => props.navigation.navigate('List')}
     onPress={() => navigation.navigate('List')}>
       <Text>Go to list demo</Text>
