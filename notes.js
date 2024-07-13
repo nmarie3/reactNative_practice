@@ -8,8 +8,8 @@
 //gets called with two objects
 //argument1: obj that hass all of our state in
 //argument 2: obj that describes the update we want to make
-//look at arg 2 and use it to decide how to change arg 1
-//IMPORTANT *we never change arg 1 directly *we must always return a value to be used as arg 1
+//look at argument 2 and use it to decide how to change argument 1
+//IMPORTANT *we never change argument 1 directly *we must always return a value to be used as argument 1
 
 //action objs have a:
 //type - string that describes the exact change operation we want to make
