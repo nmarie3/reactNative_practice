@@ -40,6 +40,10 @@ import { Text, StyleSheet, View, Button, TouchableOpacity} from "react-native";
       onPress={() => navigation.navigate('Text')}
       title="Go to text demo"
     />
+    <Button 
+      onPress={() => navigation.navigate('Box')}
+      title="Go to box demo"
+    />
     <TouchableOpacity //onPress={() => props.navigation.navigate('List')}
     onPress={() => navigation.navigate('List')}>
       <Text>Go to list demo</Text>
